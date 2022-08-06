@@ -3,8 +3,6 @@ package tests;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import utilities.BaseClass;
-import utilities.ExcelUtils;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 
-public class submitformTest extends BaseClass {
+public class submitformsTest extends BaseClass {
 
 	private WebDriver driver;
 
 	@BeforeClass
 	public void setup() throws Exception {
-		
+
 		driver = invokeBrowser();
 	}
 
@@ -26,10 +24,10 @@ public class submitformTest extends BaseClass {
 	public void formSubmission(String Name, String Email, String Password, String Gender, String DOB) throws Exception {
 
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-		
-		type(homePage.nameEditBox, Name);
-		
-		//homePage.nameEditBox.sendKeys("Ramya");
+
+		//type(homePage.nameEditBox, Name);
+
+		homePage.nameEditBox.sendKeys(Name);
 
 		homePage.emailEditBox.sendKeys(Email);
 
@@ -54,7 +52,7 @@ public class submitformTest extends BaseClass {
 		//Assert.assertEquals("The Form has been submitted successfully", validationText);
 
 		Thread.sleep(4000);
-		
+
 		driver.navigate().refresh();
 
 	}
@@ -65,21 +63,10 @@ public class submitformTest extends BaseClass {
 		driver.quit();
 	}
 	
-	@DataProvider
-	//@DataProvider(name = "formDetails")
-	  public static Object[][] formDetails() throws Exception {
-
-	        // The number of times data is repeated, test will be executed the same no. of times
-
-	        // Here it will execute two times
-
-	       // return new Object[][] {{"Ramya", "Ramya@gmail.com","Ramya@123","Female","01-01-1988" }, {"Venkat", "Venkat@gmail.com","Venkat@123","Male","01-08-1988" }};
-
-		Object[][] testobjectarray = ExcelUtils.getTableArray("D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-2\\TestData\\formSubmission.xls", "submitForm");
+	@DataProvider(name = "formDetails")
+	public Object[][] formDetails() {
 		
-		System.out.println(testobjectarray);
-		
-		return testobjectarray;
-		
-	  }
+		return new Object[][] {{"Ramya","Ramya@gmail.com","Ramya@123","Female","01-01-1988"},{"Venkat","Venkat@gmail.com","Venkat@123","Male","01-08-1988"}};	
+	}
+
 }
