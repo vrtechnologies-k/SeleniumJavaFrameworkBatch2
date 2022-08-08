@@ -5,9 +5,14 @@ import pageObjects.HomePage;
 import utilities.BaseClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import java.io.File;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 
 public class submitformsTest extends BaseClass {
@@ -28,8 +33,12 @@ public class submitformsTest extends BaseClass {
 		//type(homePage.nameEditBox, Name);
 
 		homePage.nameEditBox.sendKeys(Name);
+		
+		Reporter.log("user enter the name");
 
 		homePage.emailEditBox.sendKeys(Email);
+		
+		Reporter.log("user enter the email");
 
 		Thread.sleep(2000);
 
@@ -52,7 +61,17 @@ public class submitformsTest extends BaseClass {
 		//Assert.assertEquals("The Form has been submitted successfully", validationText);
 
 		Thread.sleep(4000);
-
+		
+		/*
+		 * File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 * 
+		 * File destFile = new File("Screenshots//screenshot.png");
+		 * FileUtils.copyFile(scrFile, destFile);
+		 * 
+		 * Reporter.
+		 * log("<a target = \"_blank\" href=\"D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-2\\Screenshots\\screenshot.png\">screenshot</a>"
+		 * );
+		 */
 		driver.navigate().refresh();
 
 	}

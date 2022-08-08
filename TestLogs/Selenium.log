@@ -1,0 +1,24 @@
+23:23:31,140  INFO tests:? - user laumch the browser
+23:23:31,417  INFO tests:? - enter the name in the name edit box
+23:23:33,493  INFO tests:? - enter the email in the Email edit box
+23:23:33,516  INFO tests:? - Attiribute Value is:Ramya@gmail.com
+23:23:33,581  INFO tests:? - enter the password in the password edit box
+23:23:33,640  INFO tests:? - click on the checkbox
+23:23:33,709  INFO tests:? - Select Male from the gender dropdown
+23:23:33,755  INFO tests:? - click on the radio button
+23:23:33,809  INFO tests:? - Enter the DOB in Date of Birthday Calendar
+23:23:33,857  INFO tests:? - Click on the submit button
+23:23:33,880  INFO tests:? - Alert Message is:×
+Success! The Form has been submitted successfully!.
+23:23:38,111  INFO tests:? - enter the name in the name edit box
+23:23:40,183  INFO tests:? - enter the email in the Email edit box
+23:23:40,206  INFO tests:? - Attiribute Value is:venkat@gmail.com
+23:23:40,262  INFO tests:? - enter the password in the password edit box
+23:23:40,309  INFO tests:? - click on the checkbox
+23:23:40,367  INFO tests:? - Select Male from the gender dropdown
+23:23:40,408  INFO tests:? - click on the radio button
+23:23:40,460  INFO tests:? - Enter the DOB in Date of Birthday Calendar
+23:23:40,502  INFO tests:? - Click on the submit button
+23:23:40,523  INFO tests:? - Alert Message is:×
+Success! The Form has been submitted successfully!.
+23:23:44,679  INFO tests:? - enter the name in the name edit box
