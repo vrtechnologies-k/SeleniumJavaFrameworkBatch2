@@ -34,6 +34,7 @@ public class submitformsTest extends BaseClass {
 
 		homePage.nameEditBox.sendKeys(Name);
 		
+		
 		Reporter.log("user enter the name");
 
 		homePage.emailEditBox.sendKeys(Email);
@@ -45,22 +46,40 @@ public class submitformsTest extends BaseClass {
 		String getattributevalue = homePage.emailEditBox.getAttribute("value");
 
 		homePage.passwordEditBox.sendKeys(Password);
+		
+		Reporter.log("user enter the password");
 
 		homePage.checkBox.click();
+		
+		Reporter.log("click on the checkbox");
 
 		new Select(homePage.select).selectByVisibleText(Gender);
+		
+		Reporter.log("select the gender: "+Gender);
 
 		homePage.radiobtn.click();
+		
+		Reporter.log("click on the radio button");
 
 		homePage.DOB.sendKeys(DOB);
+		
+		Reporter.log("enter DOB");
 
 		homePage.submitBtn.click();
+		
+		Reporter.log("click on submit");
 
 		String validationText= homePage.alertMessage.getText();
 
 		//Assert.assertEquals("The Form has been submitted successfully", validationText);
 
 		Thread.sleep(4000);
+		
+		Reporter.log("Validation message is :"+validationText);
+		
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(file, new File("Screenshots//screenshot.png"));
 		
 		/*
 		 * File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -72,6 +91,9 @@ public class submitformsTest extends BaseClass {
 		 * log("<a target = \"_blank\" href=\"D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-2\\Screenshots\\screenshot.png\">screenshot</a>"
 		 * );
 		 */
+		
+		Reporter.log("<a target = \"_blank\" href=\"D:\\TrainingProjects\\SeleniumJavaFrameworkBatch-2\\Screenshots\\screenshot.png\">screenshot</>");
+		
 		driver.navigate().refresh();
 
 	}

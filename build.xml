@@ -1,4 +1,4 @@
-<project name="Sample Ant build" basedir=".">
+<project name="Ant Selenium Framework" basedir=".">
 	<!-- ========== Initialize Properties =================================== -->
 	<!-- set global properties for build -->
 	<property name="basedir" value="." />

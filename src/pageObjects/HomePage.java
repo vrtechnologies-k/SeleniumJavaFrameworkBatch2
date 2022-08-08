@@ -29,7 +29,7 @@ public class HomePage {
 	@FindBy(css = "[value='Submit']")
 	public WebElement submitBtn;
 	
-	@FindBy(css = "div[class*='alert-success1']")
+	@FindBy(css = "div[class*='alert-success']")
 	public WebElement alertMessage;
 	
 	
