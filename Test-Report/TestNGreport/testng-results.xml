@@ -64,16 +64,16 @@ Success! The Form has been submitted successfully!.]]>
       <![CDATA[<a target = "_blank" href="D:\TrainingProjects\SeleniumJavaFrameworkBatch-2\Screenshots\screenshot.png">screenshot</>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="37659" started-at="2022-08-08T14:57:18Z" finished-at="2022-08-08T14:57:56Z">
+  <suite name="Suite" duration-ms="38898" started-at="2022-08-09T14:45:00Z" finished-at="2022-08-09T14:45:39Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="37659" started-at="2022-08-08T14:57:18Z" finished-at="2022-08-08T14:57:56Z">
+    <test name="Test" duration-ms="38898" started-at="2022-08-09T14:45:00Z" finished-at="2022-08-09T14:45:39Z">
       <class name="tests.submitformsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.submitformsTest@23a5fd2]" name="setup" is-config="true" duration-ms="4839" started-at="2022-08-08T14:57:18Z" finished-at="2022-08-08T14:57:23Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.submitformsTest@23a5fd2]" name="setup" is-config="true" duration-ms="5584" started-at="2022-08-09T14:45:00Z" finished-at="2022-08-09T14:45:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="formSubmission(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitformsTest@23a5fd2]" name="formSubmission" duration-ms="7166" started-at="2022-08-08T14:57:23Z" data-provider="formDetails" finished-at="2022-08-08T14:57:30Z">
+        <test-method status="PASS" signature="formSubmission(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitformsTest@23a5fd2]" name="formSubmission" duration-ms="7462" started-at="2022-08-09T14:45:06Z" data-provider="formDetails" finished-at="2022-08-09T14:45:13Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ Success! The Form has been submitted successfully!.]]>
             </line>
           </reporter-output>
         </test-method> <!-- formSubmission -->
-        <test-method status="PASS" signature="formSubmission(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitformsTest@23a5fd2]" name="formSubmission" duration-ms="6887" started-at="2022-08-08T14:57:30Z" data-provider="formDetails" finished-at="2022-08-08T14:57:37Z">
+        <test-method status="PASS" signature="formSubmission(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.submitformsTest@23a5fd2]" name="formSubmission" duration-ms="6907" started-at="2022-08-09T14:45:13Z" data-provider="formDetails" finished-at="2022-08-09T14:45:20Z">
           <params>
             <param index="0">
               <value>
@@ -197,21 +197,21 @@ Success! The Form has been submitted successfully!.]]>
             </line>
           </reporter-output>
         </test-method> <!-- formSubmission -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.submitformsTest@23a5fd2]" name="tearDown" is-config="true" duration-ms="736" started-at="2022-08-08T14:57:37Z" finished-at="2022-08-08T14:57:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.submitformsTest@23a5fd2]" name="tearDown" is-config="true" duration-ms="798" started-at="2022-08-09T14:45:20Z" finished-at="2022-08-09T14:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.submitformsTest -->
       <class name="tests.PlaceOrderTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="setup" is-config="true" duration-ms="2544" started-at="2022-08-08T14:57:38Z" finished-at="2022-08-08T14:57:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="setup" is-config="true" duration-ms="2521" started-at="2022-08-09T14:45:21Z" finished-at="2022-08-09T14:45:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="placeOrderTest()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="placeOrderTest" duration-ms="14701" started-at="2022-08-08T14:57:41Z" finished-at="2022-08-08T14:57:55Z">
+        <test-method status="PASS" signature="placeOrderTest()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="placeOrderTest" duration-ms="14843" started-at="2022-08-09T14:45:24Z" finished-at="2022-08-09T14:45:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="tearDown" is-config="true" duration-ms="756" started-at="2022-08-08T14:57:55Z" finished-at="2022-08-08T14:57:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.PlaceOrderTest@78a2da20]" name="tearDown" is-config="true" duration-ms="751" started-at="2022-08-09T14:45:38Z" finished-at="2022-08-09T14:45:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
